@@ -22,7 +22,10 @@ babel src/index.js -o dist/index.js (并未转换)
 
 ## 字符串模板,includes|startsWith|endsWith 
 
-## ES6数字操作
+## ES6数字操作 isFinite|isNaN|isInteger|parseInt|parseFloat|MAX_SAFE_INTEGER|MIN_SAFE_INTEGER|isSafeInteger
+
+## ES6数组 Array.from|Array.of|find 实例方法|fill 实例方法|for...of循环|entries()实例
+
 
 
 
