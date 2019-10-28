@@ -26,6 +26,8 @@ babel src/index.js -o dist/index.js (并未转换)
 
 ## ES6数组 Array.from|Array.of|find 实例方法|fill 实例方法|for...of循环|entries()实例
 
+## 箭头函数
+
 
 
 

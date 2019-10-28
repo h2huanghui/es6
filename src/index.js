@@ -112,52 +112,74 @@
 // console.log(Number.isSafeInteger(h1))
 
 /* 6.json数组格式 */
-let json = {
-    '0': 'hh',
-    '1': 'huanghui',
-    '2': 'come on',
-    length: 3
+// let json = {
+//     '0': 'hh',
+//     '1': 'huanghui',
+//     '2': 'come on',
+//     length: 3
+// }
+// let arr = Array.from(json) //转化为数组
+// console.log(arr) //["hh", "huanghui", "come on"]
+
+// let arr1 = Array.of(3, 4, 5, 6)
+// console.log(arr1)
+
+// let arr2 = '[1,2,3,4]'
+// let arr3 = eval(arr2) //性能比较低
+// console.log(arr3)
+
+// //find 实例方法
+// let arr4 = [1, 2, 3, 4, 5, 6, 7, 8]
+// console.log(arr4.find(function (value,index,arr4) {
+//   return value > 5 //找到就返回符合条件的值,不会继续查找;没有符合条件的值返回undefined
+// }))
+
+// //fill 实例方法
+// let arr5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// arr5.fill('hh', 2, 5) //第二位到第五位进行填充
+// console.log(arr5)
+
+// //数组的遍历 for...of
+// let arr6 = ['a', 'b', 'c']
+// for (let item of arr6) {
+//     console.log(item) //数组的每一个元素
+// }
+// for (let index of arr6.keys()) {
+//     console.log(index)  //数组的索引
+// }
+
+// //entries实例方式生成的是Iterator形式的数组(好处:需要时用next()手动跳转到下一个值)
+// for (let [index, val] of arr6.entries()) {
+//     console.log(index + ':' + val) //索引和值
+// }
+
+// let list = arr6.entries()
+// console.log(list)
+// console.log(list.next().value) //[0,"a"]
+// console.log(list.next().value) //[1,"b"]
+// console.log(list.next().value) //[2,"c"]
+
+
+/* 7.箭头函数 */
+// function add(a, b=1) {
+//     // 'use strict' //写在函数体中,针对函数使用。如果使用默认值,再使用严格模式,就会有冲突
+//     if (a === 0) {
+//         throw new Error('error') //ES6中使用throw new Error,就可以抛出错误
+//     }
+//     return a + b
+// }
+// console.log(add.length) //add.length用来获取函数必须参数的个数
+
+// var add = (a, b = 1) => a + b
+// console.log(add(1))
+//方法体内两句话,需要使用{}
+var add = (a, b = 1) => {
+    console.log('22')
+    return a + b
 }
-let arr = Array.from(json) //转化为数组
-console.log(arr) //["hh", "huanghui", "come on"]
+console.log(add(3))
 
-let arr1 = Array.of(3, 4, 5, 6)
-console.log(arr1)
 
-let arr2 = '[1,2,3,4]'
-let arr3 = eval(arr2) //性能比较低
-console.log(arr3)
-
-//find 实例方法
-let arr4 = [1, 2, 3, 4, 5, 6, 7, 8]
-console.log(arr4.find(function (value,index,arr4) {
-  return value > 10
-}))
-
-//fill 实例方法
-let arr5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-arr5.fill('hh', 2, 5)
-console.log(arr5)
-
-//数组的遍历 for...of
-let arr6 = ['a', 'b', 'c']
-for (let item of arr6) {
-    console.log(item)
-}
-for (let index of arr6.keys()) {
-    console.log(index)
-}
-
-//entries实例方式生成的是Iterator形式的数组(好处:需要时用next()手动跳转到下一个值)
-for (let [index, val] of arr6.entries()) {
-    console.log(index + ':' + val)
-}
-
-let list = arr6.entries()
-console.log(list)
-console.log(list.next().value) //[0,"a"]
-console.log(list.next().value) //[1,"b"]
-console.log(list.next().value) //[2,"c"]
 
 
 
