@@ -28,6 +28,10 @@ babel src/index.js -o dist/index.js (并未转换)
 
 ## 箭头函数
 
+## promise
+
+## await async
+
 
 
 

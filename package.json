@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/index.js -o dist/index.js"
+    "build": "babel src/promise.js -o dist/promise.js"
   },
   "keywords": [],
   "author": "",
